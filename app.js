@@ -1,4 +1,5 @@
 require('dotenv').config()
+require('express-async-errors') //to handle async errors(async wrapper package), just install package
 
 const express = require('express');
 const app = express();
