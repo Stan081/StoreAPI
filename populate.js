@@ -11,8 +11,10 @@ const start = async() =>{
         await Product.deleteMany()  //Delete all contents in DB
         await Product.create(jsonProducts)
         console.log('Sucess')
+        process.exit(0)
     }catch(error){
         console.log(error)
+        process.exit(1)
     }
 }
 
